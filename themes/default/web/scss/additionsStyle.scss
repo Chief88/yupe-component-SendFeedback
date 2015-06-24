@@ -1,0 +1,77 @@
+$flashMessageWidth: 300px;
+
+.paginator .active > a,
+#top-menu .active > a,
+#footer-menu .active > a{
+  cursor: default;
+  text-decoration: none;
+}
+.no-click > a,
+.no-click{
+  cursor: default;
+}
+
+#flashMessage{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: $flashMessageWidth;
+  margin-left: -$flashMessageWidth / 2;
+  text-align: center;
+  z-index: 1500;
+  opacity: 1;
+}
+
+#fancybox-buttons a {
+  background-image: url(../images/fancybox_buttons.png);
+}
+.fancybox-nav {
+  background-image: url(../images/s.gif);
+}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url('../images/fancybox_sprite.png');
+}
+#fancybox-loading div {
+  background-image: url('../images/fancybox_loading.gif');
+}
+.fancybox-overlay {
+  background-image: url('../images/fancybox_overlay.png');
+}
+
+.slick-slider {
+  p {
+    margin: 0px;
+  }
+}
+
+#reviews-modal{
+  .modal-dialog{
+    width: 600px;
+  }
+}
+
+main img.border {
+  border: 7px solid #FFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.has-error {
+  .help-block.error{
+    z-index: 10;
+  }
+}
+
+.tab-content{
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.pool-no-3,
+.about,
+.main-about-1__content{
+  [style*="font-size: 18px"] {
+    line-height: 22px;
+  }
+}
