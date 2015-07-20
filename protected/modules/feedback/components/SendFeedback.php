@@ -55,6 +55,10 @@ class SendFeedback extends CApplicationComponent{
 
             if ($form->validate()) {
 
+                if(empty($form->text)){
+                    $form->text = "&nbsp;";
+                }
+
                 // обработка запроса
                 $backEnd = array_unique($module->backEnd);
 
